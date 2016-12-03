@@ -1,0 +1,1 @@
+C:\Users\leDomce\Documents\Visual Studio 2015\Projects\FullServiceShop\FullServiceShop\FullServiceShop.Windows\FullServiceShop.Windows.csproj;neutral
