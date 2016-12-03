@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>7566cf8e-114e-45e6-8e38-f3f50e6c54a9</ProjectGuid>
+    <ProjectGuid>{7566CF8E-114E-45E6-8E38-F3F50E6C54A9}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FullServiceShop</RootNamespace>
@@ -15,9 +15,7 @@
     <FileAlignment>512</FileAlignment>
     <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    
     <PackageCertificateKeyFile>FullServiceShop.Windows_TemporaryKey.pfx</PackageCertificateKeyFile>
-    	
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -108,6 +106,8 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICashier.cs" />
+    <Compile Include="IGoodsCollector.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -117,9 +117,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-	
     <None Include="FullServiceShop.Windows_TemporaryKey.pfx" />
-        
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.scale-100.png" />
